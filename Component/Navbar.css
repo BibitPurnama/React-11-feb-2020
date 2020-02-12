@@ -1,0 +1,10 @@
+.navbar {
+    font-size: 20px;
+    background: red;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.Navbar {
+    font-size: 30px;
+}
