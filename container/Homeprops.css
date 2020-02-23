@@ -1,0 +1,31 @@
+.layout-gambar{
+    display: flex;
+    flex-direction: colum;
+    border:2px solid black;
+    border-radius:5px;
+    margin: 60px;
+    padding: 65px;
+}
+.content-gambar{
+    display: flex;
+}
+.gambar{
+    margin:0px 50px 0px 0px;
+    transition:1s;
+    height: 150px;
+    width: 160px;
+}
+.gambar:hover{
+    margin: 0px;
+    width: 200px;
+    height: 160px;
+    transform:rotate -75deg;
+    cursor:pointer;
+}
+.text{
+    display:block;
+    font-size: 25px
+}
+h5:hover{
+    cursor:pointer;
+}

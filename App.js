@@ -1,24 +1,20 @@
-import React, {Component} from 'react';
-import Content from './Component/Content'
-import Footer from './Component/Footer'
-import Navbar from './Component/Navbar'
-import Logo from './Component/logo'
-import Inti from './Component/Inti'
-import './Component/Navbar.css'
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Home from './container/Home';
+import Detail from './container/Detail';
+import './App.css';
+// import HomeProps from './HomeProps'
 
-const App = () => {
-    return (
+const App = ()=>{
+    return(
         <div>
-            <div className = 'navbar'>
-        <Navbar />
-        <Inti />
-        </div>
-        <Content />
-        <Footer />
-        <Logo />
+            <Switch>
+                <Route path="/" exact component={Home} />
+                <Route path="/home/:id" exact component={Detail} />
+            </Switch>
         </div>
     )
 }
 
-export default App;
 
+export default App;
